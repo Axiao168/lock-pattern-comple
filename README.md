@@ -1,4 +1,4 @@
-Solving the most complex lock patterns using Constraint Programming with MiniZinc.
+Solving the most complex lock patterns using Constraint Programming with [MiniZinc](https://www.minizinc.org/).
 
 Inspired by [What Is The Most Complicated Lock Pattern?](https://www.youtube.com/watch?v=PKjbBQ0PBCQ) by *Dr. Zye*.
 
