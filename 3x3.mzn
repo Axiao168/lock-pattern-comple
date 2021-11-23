@@ -17,16 +17,18 @@ predicate f(int: x1, int: y1, int: x2, int: y2) = exists(i in 1..8)(
     (dx[i] = x1 /\ dy[i] = y1) \/ (dx[i] = x2 /\ dy[i] = y2)
 );
 
-constraint f(0, 1, 0, -1);
-constraint f(1, 0, -1, 0);
+constraint f(0, 1, 0, -1) \/ f(0, 2, 0, -2);
+constraint f(1, 0, -1, 0) \/ f(2, 0, -2, 0);
 constraint f(2, 1, -2, -1);
-constraint f(1, 1, -1, -1);
+constraint f(1, 1, -1, -1) \/ f(2, 2, -2, -2);
 constraint f(1, 2, -1, -2);
 constraint f(-2, 1, 2, -1);
-constraint f(-1, 1, 1, -1);
+constraint f(-1, 1, 1, -1) \/ f(-2, 2, 2, -2);
 constraint f(-1, 2, 1, -2);
 
 % Break symmetries
 % TODO: rotations: 0, 90, 180, 270
 % TODO: reflections: horizontal, vertical
 % constraint symmetry_breaking_constraint(lex_lesseq(p, p));
+
+solve maximize sum(i in 1..8)(abs(dx[i]) + abs(dy[i]));
