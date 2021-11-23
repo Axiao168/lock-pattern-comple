@@ -6,20 +6,20 @@
 %%%mzn-stat: flatIntConstraints=132
 %%%mzn-stat: evaluatedHalfReifiedConstraints=80
 %%%mzn-stat: method="maximize"
-%%%mzn-stat: flatTime=0.0735418
+%%%mzn-stat: flatTime=0.0948073
 %%%mzn-stat-end
 
-p = array1d(1..9, [4, 5, 8, 3, 7, 6, 1, 9, 2]);
+d=[6, 5, 8, 1, 9, 4, 3, 7, 2], s=22
 ----------
 ==========
-%%%mzn-stat: initTime=0.00162
-%%%mzn-stat: solveTime=0.371064
+%%%mzn-stat: initTime=0.001607
+%%%mzn-stat: solveTime=0.387264
 %%%mzn-stat: solutions=5
 %%%mzn-stat: variables=332
 %%%mzn-stat: propagators=332
-%%%mzn-stat: propagations=4774330
-%%%mzn-stat: nodes=51483
-%%%mzn-stat: failures=25737
+%%%mzn-stat: propagations=5015405
+%%%mzn-stat: nodes=53041
+%%%mzn-stat: failures=26516
 %%%mzn-stat: restarts=0
 %%%mzn-stat: peakDepth=17
 %%%mzn-stat-end
